@@ -1,0 +1,6 @@
+FROM openjdk:11
+LABEL auther="DevSecOps"
+LABEL org="ITasCode"
+RUN wget https://springbucket1101.s3.amazonaws.com/spring-petclinic-2.4.4.jar
+EXPOSE 8080
+CMD [ "java", "-jar", "spring-petclinic-2.4.4.jar" ]

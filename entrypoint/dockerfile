@@ -1,0 +1,6 @@
+FROM ubuntu:18.04
+LABEL auther="DevSecOpsTeam"
+LABEL auther="ITasCode"
+RUN apt-get update && apt- get install apache2 -y apache2 git
+VOLUME [ "/var/www/html" ]
+ENTRYPOINT ["echo", "helloworld"]
