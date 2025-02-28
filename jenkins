@@ -10,7 +10,7 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/muralikrishna188/Java17Project.git'
             }
         }
-                stage('build the code') {
+        stage('build the code') {
             steps {
                 sh 'mvn clean install'
             }
